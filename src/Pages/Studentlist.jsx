@@ -41,13 +41,13 @@ const StudentList = () => {
       <div className="bg-[#EFEFEF] p-10 border rounded-md">
         <h1 className="text-3xl font-medium mb-1">Student List</h1>
         <p className="mb-5 text-gray-500">Click "Add to Favourite" to save a student : )</p>
-        <div className="flex gap-3 mb-6">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 mb-6">
           <input
             type="text"
             placeholder="Student Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="border p-2 rounded"
+            className="border p-2 rounded w-full sm:w-auto sm:flex-1 min-w-0"
           />
 
           <input
@@ -55,7 +55,7 @@ const StudentList = () => {
             placeholder="Roll Number"
             value={roll}
             onChange={(e) => setRoll(e.target.value)}
-            className="border p-2 rounded"
+            className="border p-2 rounded w-full sm:w-auto sm:flex-1 min-w-0"
           />
 
           <input
@@ -63,7 +63,7 @@ const StudentList = () => {
             placeholder="Department"
             value={dept}
             onChange={(e) => setDept(e.target.value)}
-            className="border p-2 rounded"
+            className="border p-2 rounded w-full sm:w-auto sm:flex-1 min-w-0"
           />
 
           <button
